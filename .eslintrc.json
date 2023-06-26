@@ -1,17 +1,16 @@
 {
   "overrides": [
     {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
+      "files": ["**/*.ts", "**/*.tsx"],
       "extends": "plugin:@tinymce/standard",
       "parserOptions": {
         "project": "tsconfig.json",
         "sourceType": "module"
       },
       "rules": {
-        "@tinymce/prefer-fun": "off"
+        "@tinymce/prefer-fun": "off",
+        "semi": "off",
+        "@typescript-eslint/semi": "off"
       }
     }
   ]
